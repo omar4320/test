@@ -1,19 +1,19 @@
 let Discord = require("discord.js")
 let client = new Discord.Client()
 
+client.on("ready", () => {
+  client.user.setPresence({ activity: { name: "Among Us" }, status: "idle" })
+  
+})
+
 client.on("message", message => {
 if(message.content === "ping") {
   message.channel.send("pong")
 }
-if(message.content === "embed") {
-  let embed = new Discord.MessageEmbed()
-  .setTitle("This is Embed Title")
-  .setDescription("This Is Embed description")
-  .setcolor("RANDOM")
-  .setFooter("This is Embed Footer");
-  message.channel.send(embed);
- }
-});
+  if(message.content === "nameme") {
+    let nicknames = ["dumbass", "idiot", "lord", "shitman", "good guy"]
+  }
+})
 
 
 
