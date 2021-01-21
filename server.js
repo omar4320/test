@@ -11,7 +11,8 @@ if(message.content === "ping") {
   message.channel.send("pong")
 }
   if(message.content === "nameme") {
-    let nicknames = ["dumbass", "idiot", "lord", "shitman", "good guy"]
+    let nicknames = ["dumbass", "idiot", "lord", "shitman", "good guy", "ricardo", "pink guy", "dream"]
+    message.channel.send(`${nicknames[Math.floor(Math.random() * nicknames.length)]} is your name!`)
   }
 })
 
